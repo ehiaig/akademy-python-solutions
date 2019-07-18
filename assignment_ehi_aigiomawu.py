@@ -83,3 +83,15 @@ print(a)
 d = [a[::1,:].diagonal(i) for i in range(4,1)]
 d.extend(a.diagonal(i) for i in range(1,-4,-1))
 print ([n.tolist() for n in d])
+
+"""The number 2^16 = 65536 has five digits, and the digit 5" occurs twice in this number. How many digits does the number 2^2020 have, 
+and how many times does the digit 5" occur in this number?
+"""
+
+number = 2**2020
+print(number)
+
+print('Number of digits in 2^2020 is:', len(str(abs(number))))
+
+print('Number of tTimes 5 occurs:', str(abs(number)).count('5'))
+
